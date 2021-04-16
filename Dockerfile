@@ -6,7 +6,11 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     build-essential \
-    gnuplot && \
+    gnuplot \
+    fonts-takao \
+    fonts-ipafont fonts-ipaexfont && \
+    # fonts install
+    fc-cache -fv && \
     # clean to reduce image size
     apt-get clean -y && \
     apt-get autoremove -y && \
