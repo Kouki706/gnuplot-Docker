@@ -1,5 +1,4 @@
 FROM alpine
 
 RUN apk update && \
-    apk add --no-cache \
-    gnuplot
+    apk add --upgrade gnuplot
