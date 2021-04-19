@@ -4,7 +4,7 @@ RUN apk update && \
     apk add --upgrade \
     gnuplot \
     fontconfig \
-    font-ipa \
+    ttf-freefont \
     msttcorefonts-installer && \
     update-ms-fonts && \
     fc-cache -f && \
